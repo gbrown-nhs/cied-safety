@@ -1,0 +1,29 @@
+Python dependencies:
+tkinter
+datetime
+docxtpl
+jinja2
+
+1. Download Anaconda from https://www.anaconda.com/download/success. The "Distribution" version has more functionality, and the "Miniconda" version is simple and lightweight. Either is sufficient to run this code, however Distribution is better for larger software development projects as it comes with GUI tools and many more packages installed as default. Miniconda takes up much less disk space and is what I would recommend for getting this project up and running quickly.
+
+2. Open anaconda or miniconda prompt. Check conda is working in anaconda/miniconda prompt terminal:
+conda --version 
+
+3. Create a conda virtual environment (venv) for this project, with the relevant dependencies. 
+conda create -n cied_env python=3.12.7 jinja2 -c conda-forge docxtpl
+
+4. Activate conda environment
+conda activate cied_env
+
+5. If you have opted for Miniconda instead of Distribution, you will need to install tkinter package manually.
+conda install tk
+
+6. Enter project directory
+cd PATH/TO/PROJECT/DIRECTORY
+
+7. Run code
+python gui.py
+
+Populate fields in GUI - please note dates must be in format dd/mm/yyyy
+Press submit
+See outputs in /outputs directory within the project
